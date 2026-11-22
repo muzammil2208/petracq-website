@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      .brand-name{font-family:'Montserrat','Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:76px;letter-spacing:5px}
+      .tagline{font-family:'Montserrat','Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:21px;letter-spacing:4.5px;fill:#54667A}
+    </style>
+  </defs>
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <g id="pq-monogram">
+    <path fill="#0D2F5B" fill-rule="evenodd" d="M374 115L474 115L447 215L377 215L354 300L324 300ZM396 142L436 142L424 188L384 188Z"/>
+    <path fill="#1954B8" fill-rule="evenodd" d="M384 226L454 226L426 332L399 332L407 300L364 300ZM402 248L423 248L415 278L394 278Z"/>
+  </g>
+  <text x="400" y="405" text-anchor="middle" class="brand-name"><tspan fill="#0D2F5B">PETRA</tspan><tspan fill="#1954B8">CQ</tspan></text>
+  <text x="400" y="452" text-anchor="middle" class="tagline">QUARRY MANAGEMENT SOFTWARE</text>
+</svg>

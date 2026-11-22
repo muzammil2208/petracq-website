@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Petracq | Smart ERP for Stone Crushers, Quarries &amp; Aggregate Plants</title>
+  <meta name="description" content="Petracq is an ERP built for stone crushers, quarries and aggregate plants. Weighbridge integration, billing with GST and royalty, credit control, mobile apps and a customer portal in one system." />
+  <meta name="theme-color" content="#0D2F5B" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Petracq | Smart ERP for Stone Crushers &amp; Quarries" />
+  <meta property="og:description" content="From the weighbridge to the invoice, one system that runs your whole plant." />
+  <meta property="og:image" content="assets/img/logo.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M6 21h12M4 7h16M7 7l-3 7a3 3 0 0 0 6 0L7 7zM17 7l-3 7a3 3 0 0 0 6 0l-3-7z"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 5h12v11H2zM14 9h4l3.5 3.5V16H14z"/><circle cx="6" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></symbol>
+      <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 2.5h12v19l-3-2-3 2-3-2-3 2z"/><path d="M9 7h6M9 11h6M9 15h4"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+      <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2" width="11" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+      <symbol id="i-portal" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M2.5 8.5h19"/><circle cx="12" cy="13.5" r="2"/><path d="M8.5 18c.8-1.4 2-2 3.5-2s2.7.6 3.5 2"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10.5" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></symbol>
+      <symbol id="i-factory" viewBox="0 0 24 24"><path d="M2.5 21V10l6 4v-4l6 4V5.5L21.5 3v18z"/><path d="M2 21h20"/></symbol>
+      <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10.5 10.5 0 0 1 14 0M8.5 15.5a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19.2" r="1"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9.5 5-9.5 5-9.5-5z"/><path d="M2.5 12.5l9.5 5 9.5-5M2.5 16.5l9.5 5 9.5-5"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2" y="4" width="14" height="11" rx="1.5"/><path d="M6 19h6M9 15v4"/><rect x="17.5" y="8" width="4.5" height="12" rx="1"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 19a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 9.5a4.5 4.5 0 0 1-.5 9.5z"/></symbol>
+      <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2 20l7.5-13 4.5 7.5 2.5-3.5L22 20z"/><path d="M7.5 10.5l2 1.5 2-1.5"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5l8-2v18M12 9l8 2v10M2 21h20M7.5 8h1.5M7.5 12h1.5M7.5 16h1.5M15 14h2M15 17.5h2"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.2v.3"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></symbol>
+      <symbol id="i-mono" viewBox="320 110 158 226"><path fill-rule="evenodd" d="M374 115L474 115L447 215L377 215L354 300L324 300ZM396 142L436 142L424 188L384 188Z" style="fill: var(--mono-a, #FFFFFF)"/><path fill-rule="evenodd" d="M384 226L454 226L426 332L399 332L407 300L364 300ZM402 248L423 248L415 278L394 278Z" style="fill: var(--mono-b, #3B82F6)"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Petracq home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#i-mono"/></svg>
+        <span class="brand-word">PETRA<span>CQ</span></span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#why">Why Petracq</a></li>
+          <li><a href="#who">Who it's for</a></li>
+        </ul>
+        <a href="#inquiry" class="btn btn-primary nav-cta" data-interest="Book a demo">Request a Demo</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="tick" aria-hidden="true"></span>Smart ERP for stone crushers, quarries &amp; aggregate plants</p>
+          <h1>From the weighbridge to the invoice, <span class="hl">one system</span> that runs your whole plant.</h1>
+          <p class="lead">Petracq is an ERP built for crushers, quarries and aggregate businesses. It connects your weighbridge, loaders, lab, billing and customers, so every tonne is weighed, approved, billed and tracked.</p>
+          <div class="hero-actions">
+            <a href="#inquiry" class="btn btn-primary btn-lg" data-interest="Book a demo">Request a Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#inquiry" class="btn btn-ghost-light btn-lg" data-interest="Talk to the team">Talk to Our Team</a>
+          </div>
+          <ul class="platforms" aria-label="Available on">
+            <li>Web</li><li>Android</li><li>iOS</li><li>Windows desktop</li><li>macOS desktop</li>
+          </ul>
+        </div>
+
+        <!-- Product illustration (sample data) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-head">
+              <div>
+                <div class="mock-label">Weighbridge · Plant 1</div>
+                <div class="mock-vehicle">MH 04 XX 0000</div>
+              </div>
+              <span class="pill pill-live"><span class="dot"></span>Live</span>
+            </div>
+
+            <div class="mock-steps">
+              <span class="done"></span><span class="done"></span><span class="done"></span><span class="done"></span><span class="current"></span><span></span><span></span>
+            </div>
+            <div class="mock-steplabel">Step 5 of 7 · Final weighment</div>
+
+            <div class="mock-weights">
+              <div><span>Tare</span><strong>14.20 t</strong></div>
+              <div><span>Gross</span><strong>42.86 t</strong></div>
+              <div class="net"><span>Net</span><strong>28.66 t</strong></div>
+            </div>
+
+            <div class="mock-rows">
+              <div class="mock-row"><span>Material</span><b>20 mm aggregate</b></div>
+              <div class="mock-row"><span>Royalty slip</span><b>Auto-assigned</b></div>
+              <div class="mock-row"><span>Invoice</span><b class="ok"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> Ready to generate</b></div>
+            </div>
+          </div>
+
+          <div class="float float-a">
+            <span class="float-ic ok"><svg class="ic"><use href="#i-shield"/></svg></span>
+            <div><b>Credit check passed</b><small>Within customer limit</small></div>
+          </div>
+          <div class="float float-b">
+            <span class="float-ic info"><svg class="ic"><use href="#i-drop"/></svg></span>
+            <div><b>Moisture 3.2%</b><small>Deduction applied</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMS ============ -->
+    <section class="section" id="problems">
+      <div class="container problems-grid">
+        <div class="section-head sticky-head reveal">
+          <p class="eyebrow"><span class="tick" aria-hidden="true"></span>The problems we solve</p>
+          <h2>Running a crusher plant leaks money in familiar ways.</h2>
+          <p class="sub">Petracq closes each of these gaps.</p>
+          <a href="#inquiry" class="btn btn-primary" data-interest="Book a demo">See it on your workflow</a>
+        </div>
+
+        <ul class="problem-list">
+          <li class="problem reveal">
+            <div class="problem-issue"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span><b>Weights typed by hand</b>, open to error and manipulation</span></div>
+            <div class="problem-fix"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Tare and gross weight captured directly from the weighbridge</span></div>
+          </li>
+          <li class="problem reveal">
+            <div class="problem-issue"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span><b>Dispatches over the credit limit</b>, with no check at the gate</span></div>
+            <div class="problem-fix"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Credit checked before dispatch, with over-limit vehicles blocked or sent for approval</span></div>
+          </li>
+          <li class="problem reveal">
+            <div class="problem-issue"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span><b>Material or plant switched</b> after the vehicle is already inside</span></div>
+            <div class="problem-fix"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Changes need an approved request, with CCTV snapshots on key events</span></div>
+          </li>
+          <li class="problem reveal">
+            <div class="problem-issue"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span><b>Royalty slips</b> misused, duplicated or running out unnoticed</span></div>
+            <div class="problem-fix"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Royalty books with unique numbers and low-stock alerts</span></div>
+          </li>
+          <li class="problem reveal">
+            <div class="problem-issue"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span><b>Moisture disputes</b> with no record to settle them</span></div>
+            <div class="problem-fix"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Lab results recorded and deductions calculated by your material rules</span></div>
+          </li>
+          <li class="problem reveal">
+            <div class="problem-issue"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span><b>Paperwork and phone calls</b> between the weighbridge, loaders and accounts</span></div>
+            <div class="problem-fix"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Loader and lab tasks sent straight to their phones</span></div>
+          </li>
+          <li class="problem reveal">
+            <div class="problem-issue"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span><b>No clear picture</b> across multiple plants</span></div>
+            <div class="problem-fix"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Live dashboards and reports, filtered by plant, customer or material</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="tick" aria-hidden="true"></span>What you get</p>
+          <h2>Everything your plant runs on, in one place.</h2>
+          <p class="sub">Nine modules that work together, from the gate to the customer's inbox.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-scale"/></svg></span><span class="feature-num">01</span></div>
+            <h3>Weighbridge integration, even offline</h3>
+            <ul>
+              <li>Direct RS232 connection with automatic tare and gross capture</li>
+              <li>Windows desktop app that keeps working when the internet drops</li>
+              <li>Automatic sync once you're back online, with no duplicates</li>
+              <li>Weighment slips printed or shared digitally</li>
+            </ul>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg></span><span class="feature-num">02</span></div>
+            <h3>Complete vehicle lifecycle tracking</h3>
+            <ul>
+              <li>Every stage from entry to exit, from verification to billing</li>
+              <li>One active transaction per vehicle</li>
+              <li>Live status of every vehicle in the plant</li>
+              <li>Approval-based material and plant change requests</li>
+              <li>CCTV snapshots linked to every key event</li>
+            </ul>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-receipt"/></svg></span><span class="feature-num">03</span></div>
+            <h3>Billing, GST &amp; royalty built in</h3>
+            <ul>
+              <li>Automatic billing from approved net weight</li>
+              <li>Multiple GST slabs on one invoice, such as material and royalty</li>
+              <li>Royalty books with unique numbers, multiple slips per trip and low-stock alerts</li>
+              <li>Plant-wise invoice numbering and PDF invoices</li>
+              <li>Payment tracking, partial payments and advances</li>
+            </ul>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span><span class="feature-num">04</span></div>
+            <h3>Credit control at the gate</h3>
+            <p>Customer credit is checked before dispatch and billing. Over-limit vehicles are blocked or routed for approval, and every override is logged.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-drop"/></svg></span><span class="feature-num">05</span></div>
+            <h3>Moisture testing &amp; weight comparison</h3>
+            <ul>
+              <li>Lab staff record moisture results from a mobile app</li>
+              <li>Deductions calculated automatically by your material-wise rules</li>
+              <li>Customers upload destination weights, and differences beyond your tolerance are flagged</li>
+            </ul>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><span class="feature-num">06</span></div>
+            <h3>Mobile apps for Android &amp; iOS</h3>
+            <ul>
+              <li><b>Loader App:</b> receive loading tasks, update status, work offline</li>
+              <li><b>Lab App:</b> see pending tests, enter results, sync automatically</li>
+              <li>Real-time notifications, task history and device-level access control</li>
+            </ul>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-portal"/></svg></span><span class="feature-num">07</span></div>
+            <h3>Customer portal</h3>
+            <ul>
+              <li>Track dispatches in real time</li>
+              <li>Download invoices, weighment slips and royalty documents</li>
+              <li>View statements, balances and credit status</li>
+              <li>Upload their own weighment data</li>
+            </ul>
+            <p class="feature-note">Fewer phone calls and faster payment reconciliation.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></span><span class="feature-num">08</span></div>
+            <h3>Dashboards, reports &amp; analytics</h3>
+            <ul>
+              <li>Live admin, operator and customer dashboards</li>
+              <li>Operational, financial, plant, customer and machine reports</li>
+              <li>Filter by plant, date, customer, material or vehicle</li>
+              <li>Export to PDF and Excel, with scheduled email delivery</li>
+            </ul>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-top"><span class="feature-ic"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg></span><span class="feature-num">09</span></div>
+            <h3>Control, security &amp; compliance</h3>
+            <ul>
+              <li>Role-based access you configure without code changes</li>
+              <li>Maker-checker approvals, so nobody approves their own request</li>
+              <li>Tamper-proof audit logs of every critical action</li>
+              <li>Multi-plant support, with users seeing only their plant's data</li>
+              <li>Breakdown tracking, document management and notifications</li>
+              <li>Integration with CCTV, SMS/email and accounting software</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section section-dark" id="how">
+      <div class="container how-grid">
+        <div class="section-head sticky-head reveal">
+          <p class="eyebrow eyebrow-light"><span class="tick" aria-hidden="true"></span>How it works</p>
+          <h2>One vehicle, gate to invoice.</h2>
+          <p class="sub">Every trip follows the same controlled path. Each step is recorded, so nothing gets skipped and nothing goes unbilled.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="reveal"><span class="t-num">1</span><div><h3>Vehicle arrives</h3><p>Operator verifies the vehicle, customer and credit.</p></div></li>
+          <li class="reveal"><span class="t-num">2</span><div><h3>First weighment</h3><p>Tare weight is captured automatically.</p></div></li>
+          <li class="reveal"><span class="t-num">3</span><div><h3>Loader assigned</h3><p>The task is sent to the loader's phone.</p></div></li>
+          <li class="reveal"><span class="t-num">4</span><div><h3>Loading and lab check</h3><p>Moisture is tested where applicable.</p></div></li>
+          <li class="reveal"><span class="t-num">5</span><div><h3>Final weighment</h3><p>Net weight is calculated.</p></div></li>
+          <li class="reveal"><span class="t-num">6</span><div><h3>Invoice and slip</h3><p>GST and royalty are applied and documents generated.</p></div></li>
+          <li class="reveal"><span class="t-num">7</span><div><h3>Customer notified</h3><p>Documents are available instantly in the portal.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="tick" aria-hidden="true"></span>Why Petracq</p>
+          <h2>Made for the way crushers and quarries actually work.</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why reveal"><span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-factory"/></svg></span><h3>Built for your industry</h3><p>Brass or weight billing, royalty books, moisture deductions and multiple GST rates are core features, not add-ons.</p></div>
+          <div class="why reveal"><span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-wifi"/></svg></span><h3>Works where you work</h3><p>Offline-first weighbridge and mobile apps for plants with patchy connectivity.</p></div>
+          <div class="why reveal"><span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg></span><h3>Multi-plant ready</h3><p>One system across plants, with plant-specific settings and data.</p></div>
+          <div class="why reveal"><span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg></span><h3>Accountability built in</h3><p>Approvals, audit trails and CCTV linkage on every transaction.</p></div>
+          <div class="why reveal"><span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-devices"/></svg></span><h3>One platform</h3><p>Web, Android, iOS, Windows and macOS desktop, all on one database.</p></div>
+          <div class="why reveal"><span class="why-ic"><svg class="ic" aria-hidden="true"><use href="#i-cloud"/></svg></span><h3>Hosted on AWS</h3><p>Secure cloud deployment with go-live support.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO ============ -->
+    <section class="section section-alt" id="who">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow"><span class="tick" aria-hidden="true"></span>Who it's for</p>
+          <h2>For businesses that move material by the tonne.</h2>
+        </div>
+        <ul class="who-grid">
+          <li class="who reveal"><svg class="ic" aria-hidden="true"><use href="#i-factory"/></svg><span>Stone crusher and aggregate plant owners</span></li>
+          <li class="who reveal"><svg class="ic" aria-hidden="true"><use href="#i-mountain"/></svg><span>Quarry and mining operators</span></li>
+          <li class="who reveal"><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg><span>Sand, GSB and construction material suppliers</span></li>
+          <li class="who reveal"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg><span>Multi-plant and multi-entity groups</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / INQUIRY ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow eyebrow-light"><span class="tick" aria-hidden="true"></span>Book a free demo</p>
+          <h2>See Petracq running on your plant's workflow.</h2>
+          <p class="sub">Tell us a little about your operation and we'll walk you through a vehicle's journey from gate to invoice.</p>
+          <ul class="contact-points">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>A walkthrough tailored to your plant</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Answers on weighbridge, billing and royalty setup</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>No obligation</li>
+          </ul>
+          <div class="contact-meta">
+            <p><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Mira Road, Mumbai, Maharashtra</p>
+            <p><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>www.petracq.com</p>
+          </div>
+        </div>
+
+        <div class="form-card reveal" id="inquiry">
+          <!-- Fallback action works without JavaScript; JS sends via AJAX instead. -->
+          <form id="inquiry-form" action="https://formsubmit.co/muzammilsk90@gmail.com" method="POST" novalidate>
+            <h3 class="form-title">Request a demo</h3>
+            <p class="form-hint">Fields marked <span class="req">*</span> are required.</p>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Full name <span class="req">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="e-name" />
+                <p class="err" id="e-name"></p>
+              </div>
+              <div class="field">
+                <label for="f-company">Company / plant name <span class="req">*</span></label>
+                <input id="f-company" name="company" type="text" autocomplete="organization" required maxlength="120" aria-describedby="e-company" />
+                <p class="err" id="e-company"></p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-phone">Phone <span class="req">*</span></label>
+                <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="20" placeholder="+91" aria-describedby="e-phone" />
+                <p class="err" id="e-phone"></p>
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="req">*</span></label>
+                <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="120" aria-describedby="e-email" />
+                <p class="err" id="e-email"></p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-location">City / state</label>
+                <input id="f-location" name="location" type="text" autocomplete="address-level2" maxlength="80" />
+              </div>
+              <div class="field">
+                <label for="f-plants">Number of plants</label>
+                <select id="f-plants" name="plants">
+                  <option value="">Select</option>
+                  <option>1</option>
+                  <option>2 to 3</option>
+                  <option>4 or more</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-interest">I'm interested in</label>
+              <select id="f-interest" name="interest">
+                <option>Book a demo</option>
+                <option>Talk to the team</option>
+                <option>Pricing information</option>
+                <option>Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="4" maxlength="2000" placeholder="Tell us about your plant, weighbridge or what you'd like to see."></textarea>
+            </div>
+
+            <!-- Spam trap: hidden from people, bots fill it -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-honey">Leave this empty</label>
+              <input id="f-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+            </div>
+            <input type="hidden" name="_subject" value="New Petracq website inquiry" />
+            <input type="hidden" name="_template" value="table" />
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit-btn">
+              <span class="btn-label">Send inquiry</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form-privacy">We only use your details to respond to your inquiry.</p>
+          </form>
+
+          <div class="form-success" id="form-success" hidden tabindex="-1">
+            <span class="success-ic"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <h3>Thank you, we've got your inquiry.</h3>
+            <p>Our team will be in touch shortly to set up your demo.</p>
+            <button type="button" class="btn btn-ghost" id="send-another">Send another inquiry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="Petracq home">
+          <svg class="brand-mark" aria-hidden="true"><use href="#i-mono"/></svg>
+          <span class="brand-word">PETRA<span>CQ</span></span>
+        </a>
+        <p class="footer-tag">Every tonne, accounted for.</p>
+        <p class="footer-sub">Quarry management software</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#why">Why Petracq</a>
+        <a href="#who">Who it's for</a>
+        <a href="#inquiry">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <p>Mira Road, Mumbai, Maharashtra</p>
+        <p>&copy; <span id="year">2026</span> Petracq. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-cta" id="mobile-cta">
+    <a href="#inquiry" class="btn btn-primary btn-block" data-interest="Book a demo">Request a free demo</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
