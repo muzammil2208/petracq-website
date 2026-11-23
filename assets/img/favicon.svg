@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="300 104 200 240">
-  <rect x="300" y="104" width="200" height="240" rx="36" fill="#0D2F5B"/>
-  <path fill="#FFFFFF" fill-rule="evenodd" d="M374 115L474 115L447 215L377 215L354 300L324 300ZM396 142L436 142L424 188L384 188Z"/>
-  <path fill="#3B82F6" fill-rule="evenodd" d="M384 226L454 226L426 332L399 332L407 300L364 300ZM402 248L423 248L415 278L394 278Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <polygon points="32,4 56,18 56,46 32,60 8,46 8,18" fill="#2563EB"/>
+  <polygon points="32,4 56,18 32,32 8,18" fill="#93B4FF"/>
+  <polygon points="32,32 56,18 56,46 32,60" fill="#1237A8"/>
 </svg>
