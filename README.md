@@ -57,6 +57,31 @@ activation email (see above).
 
 The site also works on any other static host (Netlify, Cloudflare Pages, cPanel, etc.).
 
+## SEO
+
+The page targets **"quarry mining management system"** and close variants (quarry management
+software, mining management system, stone crusher software). What's in place:
+
+- Keyword-led `<title>`, meta description, `<h1>` and section headings
+- Canonical URL, Open Graph and Twitter tags with a PNG share image (`assets/img/og-image.png`)
+- JSON-LD structured data: Organization, WebSite, SoftwareApplication and FAQPage
+- A visible FAQ section. If you edit an answer, update the matching text in the JSON-LD in `<head>` too
+- `robots.txt` and `sitemap.xml`
+
+All URLs assume the site lives at **https://www.petracq.com/**. If you use a different domain,
+search and replace it in `index.html`, `robots.txt` and `sitemap.xml`.
+
+**After the site is live on the domain (these matter as much as the code):**
+1. Add the site to [Google Search Console](https://search.google.com/search-console), verify the
+   domain, then submit `https://www.petracq.com/sitemap.xml` and request indexing for the home page.
+2. Do the same in [Bing Webmaster Tools](https://www.bing.com/webmasters) (you can import from Google).
+3. Create a [Google Business Profile](https://business.google.com) for Petracq (Mira Road, Mumbai)
+   with the website link.
+4. Get links from other sites: industry directories, crusher and mining associations, partner
+   weighbridge vendors, LinkedIn company page, and any customer who will mention you.
+5. Add more pages over time (for example, separate pages for weighbridge software, royalty
+   management and stone crusher billing, or customer case studies). Add each one to `sitemap.xml`.
+
 ## Before going live
 - Confirm the iOS, offline sync and CCTV claims with your development partner.
 - The hero card ("MH 04 XX 0000", weights) is an illustration with sample data.
