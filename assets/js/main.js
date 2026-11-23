@@ -18,6 +18,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const mobileCta = document.getElementById('mobile-cta');
 
+  /* ---------- Light / dark theme ---------- */
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('theme-toggle');
+  const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+  const readSaved = () => { try { return localStorage.getItem('petracq-theme'); } catch (e) { return null; } };
+
+  const applyTheme = (theme, animate) => {
+    if (animate) {
+      root.classList.add('theme-anim');
+      setTimeout(() => root.classList.remove('theme-anim'), 350);
+    }
+    root.setAttribute('data-theme', theme);
+    const next = theme === 'dark' ? 'light' : 'dark';
+    themeBtn.setAttribute('aria-checked', String(theme === 'dark'));
+    themeBtn.setAttribute('title', `Switch to ${next} mode`);
+  };
+  applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light', false);
+
+  themeBtn.addEventListener('click', () => {
+    const theme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('petracq-theme', theme); } catch (e) { /* private mode: still switches */ }
+    applyTheme(theme, true);
+  });
+  // Follow the system setting until the visitor picks a theme themselves.
+  systemDark.addEventListener('change', (e) => {
+    if (!readSaved()) applyTheme(e.matches ? 'dark' : 'light', true);
+  });
+
   /* ---------- Year ---------- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
